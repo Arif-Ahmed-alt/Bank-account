@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+    crossorigin="anonymous"
+  />
+    <title>Bank account</title>
+    <style>
+        .card{
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+        }
+        small{
+          visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+   
+   <div class="container my-5">
+       <div class="row">
+           <div class="col-md-4">
+            <div class="card bg-danger text-light">
+                <div class="card-body">
+                  <h5 class="card-title">Deposit</h5>
+                  <h1 class="display_deposit">$ 00</h1>
+                </div>
+              </div>
+           </div>
+           <div class="col-md-4 my-4 my-md-0">
+            <div class="card bg-dark text-light">
+                <div class="card-body">
+                  <h5 class="card-title">Withdraw</h5>
+                  <h1 class="display_withdraw">$ 00</h1>
+                </div>
+              </div>
+           </div>
+           <div class="col-md-4">
+            <div class="card bg-info text-light">
+                <div class="card-body">
+                  <h5 class="card-title">Balance</h5>
+                  <h1 class="display_bal">$ 00</h1>
+                </div>
+              </div>
+           </div>
+       </div>
+       <div class="row mt-5">
+           <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Deposit</h5>
+                  <div class="form-group" style="margin-top: 30px;">
+                    <input type="text" class="form-control" id="depositInput">
+                    <small class="text-dep">Last deposit $000</small>
+                  </div>
+                  <button class="btn btn-success btn-sm btn-dep">Deposit</button>
+                </div>
+              </div>
+           </div>
+           <div class="col-md-6 mt-4 mt-md-0">
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Withdraw</h5>
+                  <div class="form-group" style="margin-top: 30px;">
+                    <input type="text" class="form-control" id="withdrawInput">
+                    <small class="text-with">Last withdraw $000</small>
+                  </div>
+                  <button class="btn btn-success btn-sm btn-with">Withdraw</button>
+                </div>
+              </div>
+           </div>
+       </div>
+   </div>
+   <script src="bank.js"></script>
+</body>
+</html>
